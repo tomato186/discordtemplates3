@@ -1,0 +1,504 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+body {
+    background-color:  #282a2e;
+    background-image: url(https://tatsu.gg/landing-page-background-pattern.png);
+    overflow-x: hidden;
+}
+header {
+    padding: 1.3em;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    background-color: rgba(20, 22, 27, 0.6);
+    position: fixed;
+}
+.logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: white;
+}
+.logo:hover {
+    color: white;
+}
+.navg a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 400;
+    padding-left: 25px;
+    cursor: pointer;
+}
+.navg .community {
+    padding-right: 500px;
+}
+.login {
+    color: rgb(244, 246, 250);
+    background: rgb(88, 101, 242);
+    border: 2px solid rgba(241, 242, 250, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+}
+.navg a:hover {
+    color: white;
+}
+.navg svg{
+    display: none;
+}
+.main img {
+    width: 20em;
+    justify-content: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 70px;
+    animation: mover 2s linear;
+}
+@keyframes mover {
+    0%{
+        transform:
+        perspective(800px)
+        rotateY(-100deg) scale(0.9)
+        rotateX(-100deg) translateY(20px);
+    }
+    100%{
+        transform:
+        perspective(800px)
+        rotateY(10deg) scale(0.9)
+        rotateX(10deg) translateY(-20px);
+    }
+}
+.main {
+    align-items: center;
+}
+.main h3 {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 48px;
+    font-weight: bold;
+}
+.main h2 {
+    color: rgb(88, 101, 242);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+.main span {
+    color: rgb(88, 101, 242);
+}
+.add {
+    display: inline-block;
+    padding: 16px 32px;
+    margin: 10px 15px;
+    border-radius: 6px;
+    background-color: rgb(88, 101, 242);
+    color: white;
+    font-weight: bold;
+    box-shadow: rgb(0 0 0 / 80%) 0px 8px 25px -15px;
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+.Support {
+    display: inline-block;
+    padding: 16px 32px;
+    margin: 10px 15px;
+    border-radius: 6px;
+    background-color: rgb(88, 90, 92);
+    color: white;
+    font-weight: bold;
+    box-shadow: rgb(0 0 0 / 80%) 0px 8px 25px -15px;
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+.buttons {
+    text-align: center;
+    padding-top: 25px;
+}
+.add:hover,
+.Support:hover {
+    transform: scale(1.1);
+    color: white;
+}
+@keyframes snowfall {
+    0% {
+    transform: translate3d(var(--left-ini), 0, 0);
+    }
+    100% {
+    transform: translate3d(var(--left-end), 110vh, 0);
+    }
+}
+.spr h1 {
+    text-align: center;
+    color: rgb(88, 101, 242);
+    font-size: 25px;
+}
+.spr h3 {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 5px;
+    letter-spacing: 1px;
+}
+.spr a {
+    display: inline-block;
+    padding: 16px 32px;
+    margin: 10px 15px;
+    border-radius: 6px;
+    background-color: rgb(88, 101, 242);
+    color: white;
+    font-weight: bold;
+    box-shadow: rgb(0 0 0 / 80%) 0px 8px 25px -15px;
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+.spr a:hover {
+    transform: scale(1.1);
+}
+.spr {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10em;
+    justify-content: center;
+    padding-bottom: 10em;
+}
+.spr div {
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.spr a {
+    cursor: pointer;
+}
+.foter {
+    display: flex;
+    justify-content: center;
+}
+.foter img {
+    width: 10%;
+}
+.foter h3 {
+    color: white;
+    padding-top: 40px;
+    font-size: 20px;
+}
+.foter span {
+    font-weight: 500;
+}
+#icon {
+    padding-left: 35px; padding-right: 20px;
+}
+#iicon {
+    padding-right: 15px; padding-left: 20px; padding-top: 20px;
+}
+.termstitle {
+    color: white;
+    padding-top: 100px;
+    padding-left: 150px;
+    font-size: 37px;
+}
+.temsminititle {
+    color: white;
+    padding-top: 50px;
+    padding-left: 150px;
+    font-size: 27px;
+}
+.youOne {
+    color: white;
+    padding-top: 15px;
+    padding-left: 150px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.dvtext {
+    padding-right: 20%;
+}
+.userterms {
+    color: white;
+    padding-top: 30px;
+    padding-left: 150px;
+    font-size: 27px;
+}
+.ttl {
+    padding-bottom: 20px;
+}
+.big-ttl {
+    color: white;
+}
+.ifo-ser {
+    background-color: #23283b;
+    padding: 3rem;
+    display: flex;
+}
+.ifo-ser img {
+    width: 128px;
+    height: 128px;
+    margin-top: 50px;
+    border-radius: 0.375rem;
+}
+.totl {
+    color: white;
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.dvflexresp {
+    display: block;
+}
+.mini-titl {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.imgcenet {
+    padding-left: 20px;
+}
+.maintwo {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+}
+.allthis {
+    padding-top: 70px;
+    padding-right: 12%;
+}
+.thisistitl {
+    font-size: 40px;
+    color: white;
+}
+.paragone {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.parag {
+    font-size: 18px;
+    color: rgb(88, 101, 242);
+}
+.form-control {
+    width: 17%;
+}
+.notvis {
+    display: none;
+}
+.container {
+  padding-bottom: 20px;
+}
+@media (min-width: 1300px) {
+    .more {
+        padding-left: 23em;
+    }
+}
+@media (max-width: 1200px) {
+    .more {
+        padding-left: 15em;
+    }
+}
+@media (max-width: 1100px) {
+    .navg .community {
+        padding-right: 200px;
+    }
+    .more {
+        margin: auto;
+    }
+}
+@media (max-width: 912px) {
+    .more {
+        padding-left: 80px;
+    }
+    .foter h3 {
+        padding-top: 20px;
+    }
+    .navg .community {
+        padding-right: 100px;
+    }
+    .userterms,
+    .temsminititle,
+    .youOne,
+    .termstitle {
+        padding-left: 10px;
+    }
+    .dvtext {
+        padding: 0;
+    }
+    .maintwo {
+        display: block;
+    }
+}
+@media (max-width: 835px) {
+    .navg a {
+        display: none;
+    }
+    .navg svg {
+        display: block;
+    }
+    .logo {
+        padding-right: 80%;
+    }
+    .userterms,
+    .temsminititle,
+    .youOne,
+    .termstitle {
+        padding-left: 10px;
+    }
+    .dvtext {
+        padding: 0;
+    }
+}
+@media (max-width: 820px) {
+    .more {
+        padding-left: 50px;
+    }
+    .foter h3 {
+        padding-top: 20px;
+    }
+    .maintwo {
+        display: block;
+    }
+}
+@media (max-width: 414px) {
+    body {
+        font-size: 12px;
+    }
+    .logo {
+        padding-right: 60%;
+    }
+    .main h3 {
+        font-size: 30px;
+        font-size: 30px;
+    }
+    .about {
+        display: block;
+    }    
+    .more {
+        padding-left: 0;
+    }
+    .save {
+        display: block;
+        text-align: center;
+    }
+    .save h3 {
+        margin-top: 0%;
+    }
+    #icon {
+        padding-left: 0;
+    }
+    #iicon {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .foter img {
+        width: 20%;
+    }
+    .foter h3 {
+        padding-top: 20px;
+    }
+    .userterms,
+    .temsminititle,
+    .youOne,
+    .termstitle {
+        padding-left: 0;
+    }
+    .dvtext {
+        padding: 0;
+    }
+    .ifo-ser {
+        display: block;
+        justify-content: center;
+    }
+    .ifo-ser img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .totl {
+        margin-top: 10px;
+    }
+    .maintwo {
+        display: block;
+    }
+}
+@media (max-width: 375px) {
+    body {
+        font-size: 12px;
+    }
+    .logo {
+        padding-right: 60%;
+    }
+    .main h3 {
+        font-size: 30px;
+        font-size: 30px;
+    }
+    .about {
+        display: block;
+    }    
+    .more {
+        padding-left: 0;
+    }
+    .save {
+        display: block;
+        text-align: center;
+    }
+    .save h3 {
+        margin-top: 0%;
+    }
+    #icon {
+        padding-left: 0;
+    }
+    #iicon {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #repo {
+        padding-left: 25px;
+    }
+    .foter img {
+        width: 50px;
+    }
+    .foter h3 {
+        padding-top: 20px;
+        font-size: 10px;
+    }
+    .userterms,
+    .temsminititle,
+    .youOne,
+    .termstitle {
+        padding-left: 0;
+    }
+    .dvtext {
+        padding: 0;
+    }
+    .ifo-ser {
+        display: block;
+        justify-content: center;
+    }
+    .ifo-ser img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .totl {
+        margin-top: 10px;
+    }
+    .maintwo {
+        display: block;
+    }
+    .allthis {
+        justify-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
