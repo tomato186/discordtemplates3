@@ -37,13 +37,13 @@ async function getData() {
 
 
 
-router.get('/', (req, res) => {
+app.get('/', (req, res) => {
   var fileName = 'home';
 
     res.render(fileName)
   
 });
-router.get('/:name', async (req, res) => {
+app.get('/:name', async (req, res) => {
   var Name =req.params.name ;
   var fileName = 'discord-bot';
   
@@ -59,7 +59,7 @@ if(data.some(e=> e.title == Name)){
 }
 });
 
-router.post("/templates", async (req, res) => {
+app.post("/templates", async (req, res) => {
     let data = await getData()
   // Do Something in Node here
 
@@ -71,10 +71,8 @@ router.post("/templates", async (req, res) => {
 })
 
 
-app.use(`/.netlify/functions/api`, router);
+app.listen(3000, () => {
 
+  console.log('server started');
 
-
-
-
-module.exports.handler = serverless(app);
+});
